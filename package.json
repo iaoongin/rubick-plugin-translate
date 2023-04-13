@@ -1,0 +1,31 @@
+{
+  "name": "rubick-plugin-translate",
+  "pluginName": "翻译",
+  "version": "1.0.0",
+  "description": "翻译",
+  "pluginType": "ui",
+  "logo": "https://fanyi-cdn.cdn.bcebos.com/webStatic/translation/img/favicon/favicon.ico",
+  "features": [{
+    "code": "index",
+    "explain": "翻译",
+    "cmds": [
+      "fy",
+      "translate",
+      "翻译",
+      {
+        "type": "regex",
+        "match": "/*/",
+        "label": "翻译"
+      }
+    ]
+  }],
+  "main": "index.html",
+  "preload": "preload.js",
+  "keywords": [],
+  "author": "yffjglcms",
+  "homePage": "https://www.yffjglcms.com",
+  "license": "MIT",
+  "dependencies": {
+    "crypto": "^1.0.1"
+  }
+}
