@@ -1,7 +1,7 @@
 {
   "name": "rubick-plugin-translate",
   "pluginName": "翻译",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "翻译",
   "pluginType": "ui",
   "logo": "https://fanyi-cdn.cdn.bcebos.com/webStatic/translation/img/favicon/favicon.ico",
@@ -13,8 +13,7 @@
       "translate",
       "翻译",
       {
-        "type": "regex",
-        "match": "/*/",
+        "type": "over",
         "label": "翻译"
       }
     ]
