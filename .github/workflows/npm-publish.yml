@@ -25,11 +25,14 @@ jobs:
 
       - name: Verify NPM Token
         run: echo "NPM_TOKEN is ${{ secrets.NPM_TOKEN }}"
-        
-      - name: publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        
+      - name: publish
         run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        
 
 
           
